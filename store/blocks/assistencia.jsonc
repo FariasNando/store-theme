@@ -1,0 +1,13 @@
+{
+  "store.custom#assistencia": {
+    "blocks": [
+      "rich-text#teste",
+      "commissioned-form"
+    ]
+  },
+  "rich-text#teste": {
+    "props": {
+      "text": "Assistência é um serviço que oferece suporte e ajuda em diversas áreas, como tecnologia, saúde e bem-estar. É essencial para garantir que as pessoas tenham acesso a recursos e informações necessárias para resolver problemas e melhorar sua qualidade de vida."
+    }
+  }
+}
