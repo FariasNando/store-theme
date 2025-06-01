@@ -1,13 +1,87 @@
 {
   "store.custom#assistencia": {
     "blocks": [
-      "rich-text#teste",
-      "commissioned-form"
+      "info-card#technical-assistance",
+      "flex-layout.row#technical-assistance",
+      "flex-layout.row#technical-assistance-catalog",
+      "flex-layout.row#technical-assistance-contact"
     ]
   },
-  "rich-text#teste": {
+  "flex-layout.row#technical-assistance": {
+    "title": "Assistência Técnica",
+    "children": [
+      "rich-text#technical-assistance",
+      "technical-assistance"
+    ],
     "props": {
-      "text": "Assistência é um serviço que oferece suporte e ajuda em diversas áreas, como tecnologia, saúde e bem-estar. É essencial para garantir que as pessoas tenham acesso a recursos e informações necessárias para resolver problemas e melhorar sua qualidade de vida."
+      "blockClass": "technical-assistance",
+      "fullWidth": true
+    }
+  },
+  "info-card#technical-assistance": {
+    "props": {
+      "id": "info-card#technical-assistance",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "assets/images/banner.webp",
+      "mobileImageUrl": "assets/images/banner-mobile.webp",
+      "headline": "PROCURE UMA ASSISTÊNCIA TÉCNICA AUTORIZADA FRANKE",
+      "bodyText": "Para garantir que você tenha um atendimento pós-venda com o máximo de excelência, oferecemos uma ampla rede de Assistências Técnicas Autorizadas.",
+      "blockClass": "info-card-tec",
+      "textAlignment": "center",
+      "fetchpriority": "auto",
+      "callToActionMode": "none",
+      "preload": true
+    }
+  },
+  "rich-text#technical-assistance": {
+    "props": {
+      "id": "rich-text#technical-assistance",
+      "text": "Selecione o produto que necessita de assistencia:",
+      "textAlignment": "CENTER",
+      "blockClass": "rich-text-tec"
+    }
+  },
+  "flex-layout.row#technical-assistance-catalog": {
+    "title": "Catálogo de Assistências Autorizadas",
+    "children": [
+      "rich-text#catalog-title",
+      "rich-text#catalog-download"
+    ],
+    "props": {
+      "blockClass": "technical-assistance-catalog",
+      "fullWidth": true
+    }
+  },
+  "rich-text#catalog-title": {
+    "props": {
+      "text": "Se preferir, faça o download do nosso catálogo de Assistências Autorizadas:",
+      "textAlignment": "CENTER",
+      "blockClass": "rich-text-catalog"
+    }
+  },
+  "rich-text#catalog-download": {
+    "props": {
+      "text": "<a class='download' href='/arquivos/catalogo-assistencias.pdf' download target='_blank'>Baixar catálogo de Assistências Autorizadas Franke</a>",
+      "textAlignment": "CENTER",
+      "blockClass": "catalog-download"
+    }
+  },
+  "flex-layout.row#technical-assistance-contact": {
+    "title": "Contato",
+    "children": [
+      "rich-text#contact-title"
+    ],
+    "props": {
+      "blockClass": "technical-assistance-contact",
+      "fullWidth": true
+    }
+  },
+  "rich-text#contact-title": {
+    "props": {
+      "text": "Fale com a Franke:",
+      "textAlignment": "CENTER",
+      "blockClass": "rich-text-contact"
     }
   }
 }

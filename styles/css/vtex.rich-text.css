@@ -67,6 +67,33 @@
   font-weight: 700;
 }
 
+.paragraph--rich-text-tec {
+  color: #000;
+  font-family: AntarcticaVAR, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0 40px 40px;
+  text-align: center;
+}
+
+.container--catalog-download,
+.container--rich-text-catalog {
+  justify-content: center;
+}
+
+.paragraph--rich-text-catalog {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+  max-width: 359px;
+  padding: 36px 0 27px;
+  text-align: center;
+}
+
 @media only screen and (min-width: 640px) {
   .container--question .strong {
     font-size: 40px;

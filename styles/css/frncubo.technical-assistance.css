@@ -1,0 +1,47 @@
+.productSelectorContainer {
+  gap: 16px;
+  padding: 0px 1rem 47px;
+}
+
+.productSelectorButtonSelected {
+  border-bottom: 3px solid #e73743;
+}
+
+.selectedProductText {
+  color: #e73743;
+}
+
+.form {
+  max-width: 373px;
+  margin: 0 auto 3rem;
+}
+
+.tech_block {
+  background-color: #f2f2f2;
+  margin: 0 auto 22px;
+  max-width: 469px;
+}
+
+.cepInput,
+.cityInput,
+.stateInput {
+  border: 1px solid #d7d7d7;
+  border-right: none;
+  height: 38px;
+}
+
+.cepInput:hover,
+.cityInput:hover,
+.stateInput:hover {
+  filter: brightness(0.9);
+}
+
+.stateInput {
+  border-right: 1px solid #d7d7d7;
+}
+
+.cepInputButton,
+.cityInputButton {
+  height: 38px;
+  width: 36px;
+}

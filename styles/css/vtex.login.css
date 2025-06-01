@@ -1,0 +1,14 @@
+:global(.vtex-rich-text-0-x-paragraph--catalog-download) :global(.download) {
+  background-color: #ffffff;
+  color: #000;
+  display: flex;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 36px;
+  max-width: 344px;
+  padding: 16px 41px 13px;
+  text-align: center;
+  text-decoration: none;
+}
