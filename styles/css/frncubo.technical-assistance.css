@@ -1,6 +1,13 @@
 .productSelectorContainer {
-  gap: 16px;
-  padding: 0px 1rem 47px;
+  display: grid;
+  gap: 57px;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 47px;
+  max-width: 55px;
+}
+
+.product_text {
+  overflow-wrap: anywhere;
 }
 
 .productSelectorButtonSelected {
@@ -11,9 +18,18 @@
   color: #e73743;
 }
 
-.form {
+.product_image {
+  max-width: 55px;
+}
+
+.form_title {
+  margin: 0 auto;
   max-width: 373px;
+}
+
+.form {
   margin: 0 auto 3rem;
+  max-width: 373px;
 }
 
 .tech_block {
