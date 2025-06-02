@@ -67,6 +67,112 @@
   font-weight: 700;
 }
 
+.container--rich-text-tec {
+  justify-content: center;
+}
+
+.paragraph--rich-text-tec {
+  color: #000;
+  font-family: AntarcticaVAR, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0 40px 40px;
+  text-align: center;
+}
+
+.container--catalog-download,
+.container--rich-text-catalog {
+  justify-content: center;
+}
+
+.paragraph--rich-text-catalog {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+  max-width: 359px;
+  padding: 36px 0 27px;
+  text-align: center;
+}
+
+.container--rich-text-contact {
+  justify-content: center;
+  margin-bottom: 44px;
+}
+
+.paragraph--rich-text-contact,
+.paragraph--phone-text,
+.paragraph--email-text {
+  margin: 0;
+}
+
+.wrapper--email-text,
+.wrapper--phone-text {
+  align-items: center;
+  display: flex;
+}
+
+.wrapper--email-text::before,
+.wrapper--phone-text::before {
+  display: block;
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: url(https://lojafranke.vteximg.com.br/arquivos/mail-icon.svg) no-repeat center center;
+}
+
+.wrapper--phone-text-whatsapp::before {
+  background: url(https://lojafranke.vteximg.com.br/arquivos/whatsapp-icon.svg) no-repeat center center;
+}
+
+.wrapper--phone-text-phone::before {
+  background: url(https://lojafranke.vteximg.com.br/arquivos/telephone-icon.svg) no-repeat center center;
+}
+
+.container--email-text,
+.container--phone-text {
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 1px 14.3px -3px rgba(0, 0, 0, .15);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  height: 60px;
+  justify-content: center;
+  line-height: normal;
+  padding: 10px 15px;
+  text-align: center;
+}
+
+.container--opening-hours-title,
+.container--opening-hours-text {
+  justify-content: center;
+}
+
+.paragraph--opening-hours-title {
+  color: #000;
+  font-family: AntarcticaVAR, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0 0 1rem;
+  text-align: center;
+}
+
+.paragraph--opening-hours-text {
+  color: #000;
+  font-family: AntarcticaVAR, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
 @media only screen and (min-width: 640px) {
   .container--question .strong {
     font-size: 40px;

@@ -1,0 +1,108 @@
+.productSelectorContainer {
+  display: grid;
+  gap: 57px;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 47px;
+  max-width: 55px;
+}
+
+.product_text {
+  overflow-wrap: anywhere;
+}
+
+.productSelectorButtonSelected {
+  border-bottom: 3px solid #e73743;
+}
+
+.selectedProductText {
+  color: #e73743;
+}
+
+.product_image {
+  max-width: 55px;
+  max-height: 55px;
+}
+
+.form_title {
+  margin: 0 auto;
+  max-width: 373px;
+}
+
+.form {
+  margin: 0 auto 3rem;
+  max-width: 373px;
+}
+
+.tech_block {
+  background-color: #f2f2f2;
+  margin: 0 auto 22px;
+  max-width: 469px;
+}
+
+.cepInput,
+.cityInput,
+.stateInput {
+  border: 1px solid #d7d7d7;
+  border-right: none;
+  height: 38px;
+}
+
+.cepInput:hover,
+.cityInput:hover,
+.stateInput:hover {
+  filter: brightness(0.9);
+}
+
+.stateInput {
+  border-right: 1px solid #d7d7d7;
+}
+
+.cepInputButton,
+.cityInputButton {
+  height: 38px;
+  width: 36px;
+}
+
+.tech_legalName {
+  font-size: 0.625rem;
+  margin-bottom: 1.125rem;
+}
+
+.tech_line {
+  font-size: 0.625rem;
+  line-height: 30px;
+}
+
+.tech_icon {
+  margin-top: 7px;
+}
+
+.cep_label {
+  margin-left: 36px;
+}
+
+.cityInput:disabled {
+  background-color: #f2f2f2;
+}
+
+.productSelectorButton:hover {
+  border-bottom: #e73743 3px solid;
+}
+
+@media screen and (min-width: 64em) {
+  .productSelectorContainer {
+    display: flex;
+    max-width: unset;
+    width: 100%;
+  }
+
+  .form {
+    max-width: 470px;
+    padding: 0;
+  }
+
+  .form_title {
+    max-width: 470px;
+    padding: 0;
+  }
+}

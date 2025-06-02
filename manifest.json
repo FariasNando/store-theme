@@ -3,6 +3,7 @@
   "name": "store-theme",
   "version": "5.2.0",
   "builders": {
+    "assets": "0.x",
     "styles": "2.x",
     "store": "0.x",
     "sitemap": "0.x",
@@ -62,7 +63,8 @@
     "vtex.product-specifications": "1.x",
     "vtex.tab-layout": "0.x",
     "vtex.condition-layout": "2.x",
-    "vtex.css-handles": "1.x"
+    "vtex.css-handles": "1.x",
+    "frncubo.technical-assistance": "0.x"
   },
   "peerDependencies": {
     "vtex.reviews-and-ratings": "3.x"
