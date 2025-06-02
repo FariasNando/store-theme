@@ -15,7 +15,8 @@
     ],
     "props": {
       "blockClass": "technical-assistance",
-      "fullWidth": true
+      "fullWidth": true,
+      "preventHorizontalStretch": true
     }
   },
   "info-card#technical-assistance": {
@@ -50,7 +51,8 @@
     ],
     "props": {
       "blockClass": "technical-assistance-catalog",
-      "fullWidth": true
+      "fullWidth": true,
+      "preventHorizontalStretch": true
     }
   },
   "rich-text#catalog-title": {
@@ -62,7 +64,7 @@
   },
   "rich-text#catalog-download": {
     "props": {
-      "text": "<a class='download' href='/arquivos/catalogo-assistencias.pdf' download target='_blank'>Baixar catálogo de Assistências Autorizadas Franke</a>",
+      "text": "<a class='download' href='https://drive.google.com/uc?export=download&id=1DThFcBwmd1JdLu-DcaGeTKkhAYJE1P9E' download target='_blank'>Baixar catálogo de Assistências Autorizadas Franke</a>",
       "textAlignment": "CENTER",
       "blockClass": "catalog-download"
     }
@@ -70,11 +72,22 @@
   "flex-layout.row#technical-assistance-contact": {
     "title": "Contato",
     "children": [
-      "rich-text#contact-title"
+      "flex-layout.col#contact"
     ],
     "props": {
       "blockClass": "technical-assistance-contact",
       "fullWidth": true
+    }
+  },
+  "flex-layout.col#contact": {
+    "children": [
+      "rich-text#contact-title",
+      "flex-layout.row#phones",
+      "flex-layout.row#email",
+      "flex-layout.row#opening-hours"
+    ],
+    "props": {
+      "blockClass": "contact-col"
     }
   },
   "rich-text#contact-title": {
@@ -82,6 +95,80 @@
       "text": "Fale com a Franke:",
       "textAlignment": "CENTER",
       "blockClass": "rich-text-contact"
+    }
+  },
+  "flex-layout.row#phones": {
+    "children": [
+      "rich-text#phone1",
+      "rich-text#phone2"
+    ],
+    "props": {
+      "blockClass": "phones-row"
+    }
+  },
+  "rich-text#phone1": {
+    "props": {
+      "text": "<a href='https://wa.me/47991698550' target='_blank'>47 99169 8550</a>",
+      "textAlignment": "CENTER",
+      "blockClass": [
+        "phone-text",
+        "phone-text-whatsapp"
+      ]
+    }
+  },
+  "rich-text#phone2": {
+    "props": {
+      "text": "<a href='tel:+08004773000' target='_blank'>0800 477 3000</a>",
+      "textAlignment": "CENTER",
+      "blockClass": [
+        "phone-text",
+        "phone-text-phone"
+      ]
+    }
+  },
+  "flex-layout.row#email": {
+    "children": [
+      "rich-text#email"
+    ],
+    "props": {
+      "blockClass": "email-row"
+    }
+  },
+  "rich-text#email": {
+    "props": {
+      "blockClass": "email-text",
+      "text": "<a href='mailto:franke-atendimento@franke.com'>franke-atendimento@franke.com</a>"
+    }
+  },
+  "flex-layout.row#opening-hours": {
+    "children": [
+      "flex-layout.col#oppening-hours"
+    ],
+    "props": {
+      "blockClass": "opening-hours-row"
+    }
+  },
+  "flex-layout.col#oppening-hours": {
+    "children": [
+      "rich-text#opening-hours-title",
+      "rich-text#opening-hours"
+    ],
+    "props": {
+      "blockClass": "opening-hours-col"
+    }
+  },
+  "rich-text#opening-hours-title": {
+    "props": {
+      "text": "Horário de Atendimento:",
+      "textAlignment": "CENTER",
+      "blockClass": "opening-hours-title"
+    }
+  },
+  "rich-text#opening-hours": {
+    "props": {
+      "text": "Segunda à quinta-feira - 8h às 17h30 <br>Sexta - 8h às 16h30",
+      "textAlignment": "CENTER",
+      "blockClass": "opening-hours-text"
     }
   }
 }

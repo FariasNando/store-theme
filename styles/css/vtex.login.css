@@ -1,14 +1,47 @@
 :global(.vtex-rich-text-0-x-paragraph--catalog-download) :global(.download) {
+  align-items: center;
   background-color: #ffffff;
   color: #000;
   display: flex;
+  flex-direction: column;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
+  gap: 10px;
   line-height: normal;
   margin-bottom: 36px;
   max-width: 344px;
   padding: 16px 41px 13px;
   text-align: center;
   text-decoration: none;
+}
+
+:global(.vtex-rich-text-0-x-paragraph--catalog-download) :global(.download)::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  margin-right: 8px;
+  background-image: url('https://lojafranke.vteximg.com.br/arquivos/download-pdp.svg?v=638666085458730000');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+:global(.vtex-rich-text-0-x-paragraph--phone-text) a,
+:global(.vtex-rich-text-0-x-paragraph--email-text) a {
+  color: #000;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-left: 16px;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 64em) {
+  :global(.vtex-rich-text-0-x-paragraph--catalog-download) :global(.download) {
+    flex-direction: row;
+    max-width: 581px;
+  }
 }

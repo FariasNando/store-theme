@@ -22,6 +22,31 @@
   padding: 0 30px;
 }
 
+.flexRow--technical-assistance-contact {
+  background: #f4f4f4;
+  padding: 2.5rem 1.75rem;
+}
+
+.flexRowContent--phones-row {
+  display: flex;
+  gap: 11px;
+  margin-bottom: 18px;
+}
+
+.flexRow--opening-hours-row {
+  margin-top: 2.75rem;
+}
+
+.flexRowContent--technical-assistance-contact {
+  max-width: 340px;
+  margin: 0 auto;
+}
+
+.flexRowContent--technical-assistance-catalog {
+  align-items: center;
+  flex-direction: column;
+}
+
 @media screen and (min-width: 40em) {
 
   .flexRowContent--menu-link,

@@ -20,6 +20,7 @@
 
 .product_image {
   max-width: 55px;
+  max-height: 55px;
 }
 
 .form_title {
@@ -60,4 +61,48 @@
 .cityInputButton {
   height: 38px;
   width: 36px;
+}
+
+.tech_legalName {
+  font-size: 0.625rem;
+  margin-bottom: 1.125rem;
+}
+
+.tech_line {
+  font-size: 0.625rem;
+  line-height: 30px;
+}
+
+.tech_icon {
+  margin-top: 7px;
+}
+
+.cep_label {
+  margin-left: 36px;
+}
+
+.cityInput:disabled {
+  background-color: #f2f2f2;
+}
+
+.productSelectorButton:hover {
+  border-bottom: #e73743 3px solid;
+}
+
+@media screen and (min-width: 64em) {
+  .productSelectorContainer {
+    display: flex;
+    max-width: unset;
+    width: 100%;
+  }
+
+  .form {
+    max-width: 470px;
+    padding: 0;
+  }
+
+  .form_title {
+    max-width: 470px;
+    padding: 0;
+  }
 }
